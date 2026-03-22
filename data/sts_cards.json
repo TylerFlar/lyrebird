@@ -1,0 +1,1275 @@
+[
+  {
+    "id": "sts:strike",
+    "game": "sts",
+    "name": "Strike",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "basic",
+    "numeric_effects": {
+      "damage": 6,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 6 damage.",
+    "raw": {
+      "class_name": "Strike",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "BASIC",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 6,
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:debug_strike",
+    "game": "sts",
+    "name": "DebugStrike",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 0,
+    "rarity": "basic",
+    "numeric_effects": {
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "DebugStrike (attack).",
+    "raw": {
+      "class_name": "DebugStrike",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "BASIC",
+      "cost": 0,
+      "class_attrs": {
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:defend",
+    "game": "sts",
+    "name": "Defend",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "basic",
+    "numeric_effects": {
+      "block": 5,
+      "block_upgrade": 3
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 5 Block.",
+    "raw": {
+      "class_name": "Defend",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "BASIC",
+      "cost": 1,
+      "class_attrs": {
+        "base_block_master": 5,
+        "block_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:backstab",
+    "game": "sts",
+    "name": "Backstab",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 0,
+    "rarity": "uncommon",
+    "numeric_effects": {
+      "damage": 11,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "exhaust",
+      "innate",
+      "targets_enemy"
+    ],
+    "rules_text": "Innate. Deal 11 damage. Exhaust.",
+    "raw": {
+      "class_name": "Backstab",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "UNCOMMON",
+      "cost": 0,
+      "class_attrs": {
+        "damage_upgrade_amount": 4
+      },
+      "init_flags": {
+        "exhaust": true,
+        "is_innate": true
+      },
+      "instance_overrides": {
+        "base_damage": 11
+      }
+    }
+  },
+  {
+    "id": "sts:footwork",
+    "game": "sts",
+    "name": "Footwork",
+    "card_type": "power",
+    "card_subtype": "power",
+    "cost": 1,
+    "rarity": "uncommon",
+    "numeric_effects": {
+      "magic_number": 2,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 2 Footwork effect.",
+    "raw": {
+      "class_name": "Footwork",
+      "card_type": "POWER",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "UNCOMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 2,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:survivor",
+    "game": "sts",
+    "name": "Survivor",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "basic",
+    "numeric_effects": {
+      "block": 8,
+      "block_upgrade": 3
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 8 Block.",
+    "raw": {
+      "class_name": "Survivor",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "BASIC",
+      "cost": 1,
+      "class_attrs": {
+        "block_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {
+        "base_block": 8
+      }
+    }
+  },
+  {
+    "id": "sts:slimed",
+    "game": "sts",
+    "name": "Slimed",
+    "card_type": "status",
+    "card_subtype": "status",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {},
+    "keywords": [
+      "exhaust",
+      "targets_self"
+    ],
+    "rules_text": "Exhaust.",
+    "raw": {
+      "class_name": "Slimed",
+      "card_type": "STATUS",
+      "card_target": "SELF",
+      "color": "COLORLESS",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {},
+      "init_flags": {
+        "exhaust": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:neutralize",
+    "game": "sts",
+    "name": "Neutralize",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 0,
+    "rarity": "basic",
+    "numeric_effects": {
+      "damage": 3,
+      "magic_number": 1,
+      "damage_upgrade": 1,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 3 damage.",
+    "raw": {
+      "class_name": "Neutralize",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "BASIC",
+      "cost": 0,
+      "class_attrs": {
+        "base_damage_master": 3,
+        "damage_upgrade_amount": 1,
+        "base_magic_number_master": 1,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:alchemize",
+    "game": "sts",
+    "name": "Alchemize",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "rare",
+    "numeric_effects": {},
+    "keywords": [
+      "exhaust",
+      "targets_self"
+    ],
+    "rules_text": "Exhaust.",
+    "raw": {
+      "class_name": "Alchemize",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "RARE",
+      "cost": 1,
+      "class_attrs": {
+        "upgraded_base_cost": 0
+      },
+      "init_flags": {
+        "exhaust": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:concentrate",
+    "game": "sts",
+    "name": "Concentrate",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 0,
+    "rarity": "uncommon",
+    "numeric_effects": {
+      "magic_number": 3,
+      "magic_number_upgrade": -1
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Concentrate (skill).",
+    "raw": {
+      "class_name": "Concentrate",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "UNCOMMON",
+      "cost": 0,
+      "class_attrs": {
+        "magic_number_upgrade_amount": -1
+      },
+      "init_flags": {},
+      "instance_overrides": {
+        "base_magic_number": 3
+      }
+    }
+  },
+  {
+    "id": "sts:all_out_attack",
+    "game": "sts",
+    "name": "AllOutAttack",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "uncommon",
+    "numeric_effects": {
+      "damage": 10,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "multi_target",
+      "targets_all_enemy"
+    ],
+    "rules_text": "Deal 10 damage.",
+    "raw": {
+      "class_name": "AllOutAttack",
+      "card_type": "ATTACK",
+      "card_target": "ALL_ENEMY",
+      "color": "GREEN",
+      "rarity": "UNCOMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 10,
+        "damage_upgrade_amount": 4
+      },
+      "init_flags": {
+        "is_multi_damage": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:wound",
+    "game": "sts",
+    "name": "Wound",
+    "card_type": "status",
+    "card_subtype": "status",
+    "cost": -2,
+    "rarity": "common",
+    "numeric_effects": {},
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Wound (status).",
+    "raw": {
+      "class_name": "Wound",
+      "card_type": "STATUS",
+      "card_target": "NONE",
+      "color": "COLORLESS",
+      "rarity": "COMMON",
+      "cost": -2,
+      "class_attrs": {},
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:smite",
+    "game": "sts",
+    "name": "Smite",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "special",
+    "numeric_effects": {
+      "damage": 12,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "exhaust",
+      "retain",
+      "targets_enemy"
+    ],
+    "rules_text": "Retain. Deal 12 damage. Exhaust.",
+    "raw": {
+      "class_name": "Smite",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "COLORLESS",
+      "rarity": "SPECIAL",
+      "cost": 1,
+      "class_attrs": {
+        "damage_upgrade_amount": 4
+      },
+      "init_flags": {
+        "exhaust": true,
+        "self_retain": true
+      },
+      "instance_overrides": {
+        "base_damage": 12
+      }
+    }
+  },
+  {
+    "id": "sts:skewer",
+    "game": "sts",
+    "name": "Skewer",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": -1,
+    "rarity": "uncommon",
+    "numeric_effects": {
+      "damage": 7,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 7 damage.",
+    "raw": {
+      "class_name": "Skewer",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "UNCOMMON",
+      "cost": -1,
+      "class_attrs": {
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {
+        "base_damage": 7
+      }
+    }
+  },
+  {
+    "id": "sts:glass_knife",
+    "game": "sts",
+    "name": "GlassKnife",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": -1,
+    "rarity": "rare",
+    "numeric_effects": {
+      "damage": 8,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 8 damage.",
+    "raw": {
+      "class_name": "GlassKnife",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "RARE",
+      "cost": -1,
+      "class_attrs": {
+        "damage_upgrade_amount": 4,
+        "base_damage_master": 8
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:ascenders_bane",
+    "game": "sts",
+    "name": "AscendersBane",
+    "card_type": "curse",
+    "card_subtype": "curse",
+    "cost": -2,
+    "rarity": "special",
+    "numeric_effects": {},
+    "keywords": [
+      "ethereal",
+      "targets_none"
+    ],
+    "rules_text": "Ethereal.",
+    "raw": {
+      "class_name": "AscendersBane",
+      "card_type": "CURSE",
+      "card_target": "NONE",
+      "color": "CURSE",
+      "rarity": "SPECIAL",
+      "cost": -2,
+      "class_attrs": {},
+      "init_flags": {
+        "is_ethereal": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:acrobatics",
+    "game": "sts",
+    "name": "Acrobatics",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 3,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Acrobatics (skill).",
+    "raw": {
+      "class_name": "Acrobatics",
+      "card_type": "SKILL",
+      "card_target": "NONE",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 3,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:backflip",
+    "game": "sts",
+    "name": "Backflip",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "block": 5,
+      "block_upgrade": 3
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 5 Block.",
+    "raw": {
+      "class_name": "Backflip",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_block_master": 5,
+        "block_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:bane",
+    "game": "sts",
+    "name": "Bane",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 7,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 7 damage.",
+    "raw": {
+      "class_name": "Bane",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 7,
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:deadly_poison",
+    "game": "sts",
+    "name": "DeadlyPoison",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 5,
+      "magic_number_upgrade": 2
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "DeadlyPoison (skill).",
+    "raw": {
+      "class_name": "DeadlyPoison",
+      "card_type": "SKILL",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 5,
+        "magic_number_upgrade_amount": 2
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:regret",
+    "game": "sts",
+    "name": "Regret",
+    "card_type": "curse",
+    "card_subtype": "curse",
+    "cost": -2,
+    "rarity": "curse",
+    "numeric_effects": {},
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Regret (curse).",
+    "raw": {
+      "class_name": "Regret",
+      "card_type": "CURSE",
+      "card_target": "NONE",
+      "color": "CURSE",
+      "rarity": "CURSE",
+      "cost": -2,
+      "class_attrs": {},
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:blade_dance",
+    "game": "sts",
+    "name": "BladeDance",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 3,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "BladeDance (skill).",
+    "raw": {
+      "class_name": "BladeDance",
+      "card_type": "SKILL",
+      "card_target": "NONE",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 3,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:shiv",
+    "game": "sts",
+    "name": "Shiv",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 0,
+    "rarity": "special",
+    "numeric_effects": {
+      "damage": 4,
+      "damage_upgrade": 2
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 4 damage.",
+    "raw": {
+      "class_name": "Shiv",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "COLORLESS",
+      "rarity": "SPECIAL",
+      "cost": 0,
+      "class_attrs": {
+        "base_damage_master": 4,
+        "damage_upgrade_amount": 2
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:cloak_and_dagger",
+    "game": "sts",
+    "name": "CloakAndDagger",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "block": 6,
+      "magic_number": 1,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 6 Block.",
+    "raw": {
+      "class_name": "CloakAndDagger",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_block_master": 6,
+        "base_magic_number_master": 1,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:dagger_spray",
+    "game": "sts",
+    "name": "DaggerSpray",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 4,
+      "damage_upgrade": 2
+    },
+    "keywords": [
+      "multi_target",
+      "targets_all_enemy"
+    ],
+    "rules_text": "Deal 4 damage.",
+    "raw": {
+      "class_name": "DaggerSpray",
+      "card_type": "ATTACK",
+      "card_target": "ALL_ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 4,
+        "damage_upgrade_amount": 2
+      },
+      "init_flags": {
+        "is_multi_damage": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:dagger_throw",
+    "game": "sts",
+    "name": "DaggerThrow",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 9,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 9 damage.",
+    "raw": {
+      "class_name": "DaggerThrow",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 9,
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:deflect",
+    "game": "sts",
+    "name": "Deflect",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 0,
+    "rarity": "common",
+    "numeric_effects": {
+      "block": 4,
+      "block_upgrade": 3
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 4 Block.",
+    "raw": {
+      "class_name": "Deflect",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 0,
+      "class_attrs": {
+        "base_block_master": 4,
+        "block_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:dodge_and_roll",
+    "game": "sts",
+    "name": "DodgeAndRoll",
+    "card_type": "defense",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "block": 4,
+      "block_upgrade": 2
+    },
+    "keywords": [
+      "targets_self"
+    ],
+    "rules_text": "Gain 4 Block.",
+    "raw": {
+      "class_name": "DodgeAndRoll",
+      "card_type": "SKILL",
+      "card_target": "SELF",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_block_master": 4,
+        "block_upgrade_amount": 2
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:flying_knee",
+    "game": "sts",
+    "name": "FlyingKnee",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 8,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 8 damage.",
+    "raw": {
+      "class_name": "FlyingKnee",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 8,
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:outmaneuver",
+    "game": "sts",
+    "name": "Outmaneuver",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 2,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Outmaneuver (skill).",
+    "raw": {
+      "class_name": "Outmaneuver",
+      "card_type": "SKILL",
+      "card_target": "NONE",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 2,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:piercing_wail",
+    "game": "sts",
+    "name": "PiercingWail",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 6,
+      "magic_number_upgrade": 2
+    },
+    "keywords": [
+      "exhaust",
+      "targets_all_enemy"
+    ],
+    "rules_text": "Exhaust.",
+    "raw": {
+      "class_name": "PiercingWail",
+      "card_type": "SKILL",
+      "card_target": "ALL_ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_magic_number_master": 6,
+        "magic_number_upgrade_amount": 2
+      },
+      "init_flags": {
+        "exhaust": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:poisoned_stab",
+    "game": "sts",
+    "name": "PoisonedStab",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 6,
+      "magic_number": 3,
+      "damage_upgrade": 2,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "PoisonedStab (skill).",
+    "raw": {
+      "class_name": "PoisonedStab",
+      "card_type": "SKILL",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 6,
+        "base_magic_number_master": 3,
+        "damage_upgrade_amount": 2,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:prepared",
+    "game": "sts",
+    "name": "Prepared",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 0,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 1,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Prepared (skill).",
+    "raw": {
+      "class_name": "Prepared",
+      "card_type": "SKILL",
+      "card_target": "NONE",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 0,
+      "class_attrs": {
+        "base_magic_number_master": 1,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:quick_slash",
+    "game": "sts",
+    "name": "QuickSlash",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 8,
+      "magic_number": 1,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 8 damage.",
+    "raw": {
+      "class_name": "QuickSlash",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 8,
+        "base_magic_number_master": 1,
+        "damage_upgrade_amount": 4
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:slice",
+    "game": "sts",
+    "name": "Slice",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 0,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 6,
+      "damage_upgrade": 3
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 6 damage.",
+    "raw": {
+      "class_name": "Slice",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 0,
+      "class_attrs": {
+        "base_damage_master": 6,
+        "damage_upgrade_amount": 3
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:sneaky_strike",
+    "game": "sts",
+    "name": "SneakyStrike",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 2,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 12,
+      "magic_number": 2,
+      "damage_upgrade": 4
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 12 damage.",
+    "raw": {
+      "class_name": "SneakyStrike",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 2,
+      "class_attrs": {
+        "base_damage_master": 12,
+        "damage_upgrade_amount": 4,
+        "base_magic_number_master": 2
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:sucker_punch",
+    "game": "sts",
+    "name": "SuckerPunch",
+    "card_type": "attack",
+    "card_subtype": "attack",
+    "cost": 1,
+    "rarity": "common",
+    "numeric_effects": {
+      "damage": 7,
+      "magic_number": 1,
+      "damage_upgrade": 2,
+      "magic_number_upgrade": 1
+    },
+    "keywords": [
+      "targets_enemy"
+    ],
+    "rules_text": "Deal 7 damage.",
+    "raw": {
+      "class_name": "SuckerPunch",
+      "card_type": "ATTACK",
+      "card_target": "ENEMY",
+      "color": "GREEN",
+      "rarity": "COMMON",
+      "cost": 1,
+      "class_attrs": {
+        "base_damage_master": 7,
+        "base_magic_number_master": 1,
+        "damage_upgrade_amount": 2,
+        "magic_number_upgrade_amount": 1
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:dazed",
+    "game": "sts",
+    "name": "Dazed",
+    "card_type": "status",
+    "card_subtype": "status",
+    "cost": -2,
+    "rarity": "common",
+    "numeric_effects": {},
+    "keywords": [
+      "ethereal",
+      "targets_none"
+    ],
+    "rules_text": "Ethereal.",
+    "raw": {
+      "class_name": "Dazed",
+      "card_type": "STATUS",
+      "card_target": "NONE",
+      "color": "COLORLESS",
+      "rarity": "COMMON",
+      "cost": -2,
+      "class_attrs": {},
+      "init_flags": {
+        "is_ethereal": true
+      },
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:burn",
+    "game": "sts",
+    "name": "Burn",
+    "card_type": "status",
+    "card_subtype": "status",
+    "cost": -2,
+    "rarity": "common",
+    "numeric_effects": {
+      "magic_number": 2,
+      "magic_number_upgrade": 2
+    },
+    "keywords": [
+      "targets_none"
+    ],
+    "rules_text": "Burn (status).",
+    "raw": {
+      "class_name": "Burn",
+      "card_type": "STATUS",
+      "card_target": "NONE",
+      "color": "COLORLESS",
+      "rarity": "COMMON",
+      "cost": -2,
+      "class_attrs": {
+        "base_magic_number_master": 2,
+        "magic_number_upgrade_amount": 2
+      },
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:curse_of_the_bell",
+    "game": "sts",
+    "name": "CurseOfTheBell",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 0,
+    "rarity": "special",
+    "numeric_effects": {},
+    "keywords": [],
+    "rules_text": "CurseOfTheBell (None).",
+    "raw": {
+      "class_name": "CurseOfTheBell",
+      "card_type": null,
+      "card_target": null,
+      "color": "CURSE",
+      "rarity": "SPECIAL",
+      "cost": 0,
+      "class_attrs": {},
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  },
+  {
+    "id": "sts:necronomicurse",
+    "game": "sts",
+    "name": "Necronomicurse",
+    "card_type": "utility",
+    "card_subtype": "skill",
+    "cost": 0,
+    "rarity": "special",
+    "numeric_effects": {},
+    "keywords": [],
+    "rules_text": "Necronomicurse (None).",
+    "raw": {
+      "class_name": "Necronomicurse",
+      "card_type": null,
+      "card_target": null,
+      "color": "CURSE",
+      "rarity": "SPECIAL",
+      "cost": 0,
+      "class_attrs": {},
+      "init_flags": {},
+      "instance_overrides": {}
+    }
+  }
+]
