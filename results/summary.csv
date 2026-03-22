@@ -1,0 +1,5 @@
+condition,final_mean_floor,steps_to_floor_8,final_win_rate
+baseline,9.52,45056,0.0000
+sts_only_frozen,10.15,53248,0.0000
+cross_game_frozen,9.86,57344,0.0000
+cross_game_finetune,9.86,57344,0.0000
