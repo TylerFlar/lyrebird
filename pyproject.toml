@@ -4,3 +4,17 @@ version = "0.1.0"
 description = "Cross-game card research: shared corpus and encoder experiments"
 requires-python = ">=3.10"
 dependencies = []
+
+[project.optional-dependencies]
+train = [
+    "gymnasium>=0.29",
+    "sb3-contrib>=2.0",
+    "stable-baselines3>=2.0",
+    "numpy>=1.24",
+    "tensorboard",
+]
+test = [
+    "pytest>=7.0",
+    "gymnasium>=0.29",
+    "numpy>=1.24",
+]
